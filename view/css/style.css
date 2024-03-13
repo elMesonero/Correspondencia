@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    height: 100%;
+    width: auto;
+}
+
+body{
+    background-color: gray;
+}
+
+input:invalid{
+    animation: shake .3s;
+}
+
+@keyframes shake {
+    25% {transform: translateX(4px)}
+    50% {transform: translateX(-4px)}
+    75% {transform: translateX(4px)}
+}
+
+.header .container .btn-menu, .logo{
+    flex: left;
+}
+
+.btn-menu .label, .label{
+    box-sizing: border-box;
+    float: left;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    margin: .5rem 1rem;
+    padding: 4px;
+    height: 2.5rem;
+    width: auto;
+    border-radius: 12px;
+    transition: all 400ms ease;
+}
+
+.btn-menu .label:hover{
+    background: darkred;
+    border: 2px solid white;
+}
+
+/* Menu Lateral */
+#btn-menu{
+    display: none;
+}
+
+.container-menu{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+}
+
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menu{
+    width: 250px;
+    background: red;
+    height: 100%;
+    position: relative;
+    transition: all 500ms ease;
+}
+
+.cont-menu nav{
+    transform: translateY(15%);
+}
+
+.cont-menu nav a{
+    display: block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover{
+    border-left: 5px solid white;
+    background: darkred;
+}
+
+.cont-menu .label{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+}
+
+.cont-menu .label:hover{
+    background: darkred;
+    border: 2px solid white;
+}
+
+.navbar{
+    background-color: red;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.navbar .container_navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem 1rem;
+}
+
+.navbar .container_navbar .logo-pdvsa{
+    height: 3rem;
+    width: auto;
+}
+
+.navbar .container_navbar .form-control-name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .container_navbar .form-control-name .search{
+    padding: .75rem;
+    font-size: 1rem;
+    margin: 0 1rem 0 0;
+    height: 1.5rem;
+    width: 13rem;
+    border-radius: 2rem;
+    border: solid black 0;
+    background-color: white;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.row .input{
+    margin: 6rem 1rem 1rem 1rem;
+}
+
+.card__open .card__title{
+    margin-bottom: 1rem;
+}
+
+.card__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card__arrow{
+    height: 2rem;
+    width: auto;
+    transition: .3s;
+    align-items: center;
+}
+
+.card__open .card__arrow{
+    transform: rotate(-180deg);
+}
+
+.row .card, .card__open{
+    padding: 1.5rem;
+    height: 30rem;
+    width: 17rem;
+    border-radius: .5rem;
+    border: solid lightgray 0;
+    background-color: whitesmoke;
+}
+
+.card__close{
+    padding: 1.5rem;
+    height: 2rem;
+    width: 17rem;
+    border-radius: .5rem;
+    border: solid lightgray 0;
+    background-color: whitesmoke;
+    margin: 0 1rem 1rem 0;
+    transition: .3s;
+}
+
+.card__close .card__grid{
+    height: 0;
+    overflow: hidden;
+}
+
+.card__open{
+    margin-bottom: 1rem;
+    transition: .3s;
+}
+
+.card__open .card__grid{
+    height: max-content;
+    margin-bottom: 2.5rem;
+}
+
+.row .form-group{
+    display: grid;
+}
+
+.row .form-control-name{
+    padding: .75rem;
+    font-size: 1rem;
+    margin: 0 1rem 1rem 0;
+    height: auto;
+    width: 16rem;
+    border-radius: 1rem;
+    border: solid black 0;
+    background-color: lightgray;
+}
+
+.row .form-control-code{
+    padding: .75rem;
+    font-size: 1rem;
+    margin: 0 1rem 1rem 0;
+    height: auto;
+    width: 16rem;
+    border-radius: 1rem;
+    border: solid black 0;
+    background-color: lightgray;
+}
+
+.row .boton-guardar{
+	text-decoration: none;
+    height: auto;
+    width: 100%;
+	padding: 1rem 1rem;
+	border-radius: .75rem;
+	background: green;
+	border-style: none;
+	font-size: 1rem;
+	transition: .25s;
+    color: white;
+}
+
+.row .boton-guardar:hover{
+	background-color: darkgreen;
+}
+
+.row .boton-edit{
+	text-decoration: none;
+    height: auto;
+    width: 17rem;
+	padding: 1rem 1rem;
+	border-radius: .75rem;
+	background: blue;
+	border-style: none;
+	font-size: 1rem;
+	transition: .25s;
+    color: white;
+}
+
+.row .boton-edit:hover{
+	background-color: darkblue;
+}
+
+.row .estadisticas{
+    margin-top: 1rem;
+    display: grid;
+    padding: 1.5rem;
+    height: auto;
+    width: 17rem;
+    border-radius: .5rem;
+    border: solid lightgray 0;
+    background-color: whitesmoke;
+}
+
+.estadistica__h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+span{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 1rem;
+}
+
+.form-control-date{
+    padding: .75rem;
+    font-size: 1rem;
+    margin: 0 1rem 1rem 0;
+    height: auto;
+    width: 16rem;
+    border-radius: 1rem;
+    border: solid black 0;
+    background-color: lightgray;
+}
+
+.boton-enviar{
+	text-decoration: none;
+    height: 4.5;
+    width: 17rem;
+	padding: 1rem 1rem;
+	border-radius: .75rem;
+	background: green;
+	border-style: none;
+	font-size: 1rem;
+	transition: .25s;
+    color: white;
+}
+
+.boton-enviar:hover{
+	background-color: darkgreen;
+}
+
+.row .detalles, .search__detalles{
+    padding: 2rem;
+    margin: 6rem 1rem 1rem 1rem;
+    height: 100%;
+    width: auto;
+    border-radius: .5rem;
+    border: solid lightgray 1px;
+    background-color: whitesmoke;
+    display: flex;
+}
+
+.row .detalles .table-bordered thead tr th, .row .search__detalles .table-bordered thead tr th{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: solid gray 1px;
+    padding: .25rem;
+    background-color: white;
+    border-radius: .5rem;
+}
+
+.row .detalles .table-bordered tbody tr td, .row .search__detalles .table-bordered tbody tr td{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: white;
+    border: solid gray 1px;
+    border-radius: .25rem;
+    padding: .25rem;
+}
+
+.row .detalles .table-bordered tbody tr td a, .row .search__detalles .table-bordered tbody tr td a{
+    text-decoration: none;
+    color: black;
+	padding: 0 .5rem;
+	border-radius: .5rem;
+	background: lightblue;
+	border-style: none;
+	font-size: 1rem;
+	transition: .25s;
+}
+
+.row .detalles .table-bordered tbody tr td a:hover, .row .search__detalles .table-bordered tbody tr td a:hover{
+    background-color: blue;
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 860px){
+    .row{
+        max-width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .row .detalles{
+        padding: 1rem;
+        margin: 4rem 1rem 1rem 1rem;
+    }
+
+    .row .detalles .table-bordered thead tr th, .row .search__detalles .table-bordered thead tr th{
+        padding: .25rem;
+        font-size: .75rem;
+    }
+
+    .row .detalles .table-bordered tbody tr td, .row .search__detalles .table-bordered tbody tr td{
+        padding: 0;
+        font-size: .75rem;
+    }
+
+    .row .search__detalles{
+        padding: 1rem;
+        margin-top: 10rem;
+    }    
+
+    .row .input{
+        display: grid;
+        justify-content: center;
+    }
+
+    .row .estadisticas{
+        display: grid;
+    }
+}

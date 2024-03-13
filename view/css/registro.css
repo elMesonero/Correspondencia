@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+	background-color: darkred;
+}
+
+h2{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1rem;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+}
+
+.titulo{
+	display: flex;
+	justify-content: center;
+	margin-top: 5vh;
+	color: whitesmoke;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .card{
+	margin-top: 20vh;
+    padding: 1.5rem;
+    height: 25rem;
+    width: 17rem;
+    border-radius: 1rem;
+    border: solid lightgray 0;
+    background-color: lightgray;
+    box-shadow: 12px 12px 24px black;
+}
+
+.form-control{
+	padding: .75rem;
+    font-size: 1rem;
+    margin: 0 1.5rem 1.5rem 0;
+    height: auto;
+    width: 16rem;
+    border-radius: 1rem;
+    border: solid black 0px;
+    background-color: whitesmoke;
+}
+
+.boton{
+	text-decoration: none;
+    height: 4.5;
+    width: 17rem;
+	padding: 1rem 1rem;
+	border-radius: .75rem;
+	background: red;
+	border-style: none;
+	font-size: 1rem;
+	transition: .25s;
+    color: white;
+	margin-top: 1.5rem;
+}
+
+.boton:hover{
+	background-color: darkred;
+}
