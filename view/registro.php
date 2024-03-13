@@ -18,7 +18,7 @@
 				<input type="password" name="correo" placeholder="Correo" class="form-control">
 				<input type="text" name="cedula" placeholder="Cedula" class="form-control">
 				<input type="password" name="contraseña" placeholder="Contraseña" class="form-control">
-				<a href="index.php">Volver</a>
+				<a href=".">Volver</a>
 				<input type="submit" name="registrar" class="boton" value="Registrar">
 			</div>
 		</form>
